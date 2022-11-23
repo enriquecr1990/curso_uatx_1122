@@ -1,0 +1,2 @@
+Para poder probar los servicios solo descarguen el codigo fuente y prueben con el software visto en el curso (POST man)
+y recuerden respecto al front recuerden cambiar la URL conforme a su equipo local

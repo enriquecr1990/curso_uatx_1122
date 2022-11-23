@@ -29,9 +29,13 @@ if(isset($variablesGet['controlador']) && $variablesGet['controlador'] != ''){
                     case 'eliminar':
                         $respuesta = $peliculasCtrl->eliminar($variablesPost);
                         break;
+                    default:
+                        $respuesta['estatus'] = false;
+                        $respuesta['msg'][] = 'Lo siento, no existe la funcion del controlador que envias';
+                        break;
                 }
             }else{
-                $respuesta['msg'] = 'Huy, no puedo hacer lo que me pides, falta la funcion';
+                $respuesta['msg'][] = 'Huy, no puedo hacer lo que me pides, falta la funcion';
             }
             break;
         case 'dulceria':
